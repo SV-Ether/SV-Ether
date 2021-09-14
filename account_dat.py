@@ -21,6 +21,6 @@ def balance(bal):
             except:
                 break
         print(data)
-        print('Accounts: ', ",\n".join(list(map(lambda x: str(x), filter(lambda x: int(x['acc_bal']) > bal, data)))))
+        print('Accounts: ', ",\n".join(list(map(str, filter(lambda x: int(x['acc_bal']) > bal, data)))))
 createFile()
 balance(0)
