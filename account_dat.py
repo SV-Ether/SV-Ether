@@ -6,7 +6,7 @@ def createFile():
     acc_name = input('Enter account name: ')
     acc_bal = input('Enter account bal: ')
     data = { 'act_no': act_no, 'acc_type': acc_type, 'acc_name': acc_name, 'acc_bal': acc_bal }
-    with open('Account.dat', 'wb') as file:
+    with open('Account.dat', 'ab') as file:
         pickle.dump(data, file)
 
 def balance(bal):
