@@ -7,10 +7,10 @@ def createFile():
     acc_name = input('Enter Emp name: ')
     acc_bal = input('Enter Emp mobile: ')
     data = [act_no, acc_type, acc_name, acc_bal ]
-    with open('Account.dat', 'ab') as file:
+    with open('emp.dat', 'ab') as file:
         pickle.dump(data, file)
 
-def balance(bal):
+def totalSalary(bal):
     data = []
     with open('emp.dat', 'rb') as file:
         while True:
