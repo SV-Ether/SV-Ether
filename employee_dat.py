@@ -1,5 +1,4 @@
 import pickle
-import functools
 
 def createFile():
     act_no = input('Enter Emp Id.: ')
@@ -26,4 +25,3 @@ def totalSalary(bal):
         print(s)
 
 createFile()
-balance(0)
